@@ -1,7 +1,7 @@
 import unittest
 import os
-from challenge.utils import *
-from challenge.team_value import TeamValue
+from utils import *
+from team_value import TeamValue
 
 team_value = TeamValue('GoGetters', 10)
 test_file_path = os.path.abspath('./resources/input.csv')
@@ -89,5 +89,4 @@ class TestFinalResult(unittest.TestCase):
         self.assertEqual(team.getvalue(), 0)
 
 
-if __name__ == '__main__':
-    unittest.main()
+unittest.main()

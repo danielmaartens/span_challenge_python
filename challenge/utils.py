@@ -1,7 +1,7 @@
 import re
 import operator
 from time import sleep
-from challenge.team_value import TeamValue
+from team_value import TeamValue
 
 team_result_grouping_pattern = '^([a-zA-Z\\s]+)([0-9]+$)'
 
