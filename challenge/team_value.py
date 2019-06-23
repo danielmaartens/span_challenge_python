@@ -10,12 +10,17 @@ class TeamValue:
     def getname(self):
         return self.name
 
+    def setvalue(self, value):
+        self.value = value
+
     def getvalue(self):
         return self.value
+
+    def setrank(self, rank):
+        self.rank = rank
 
     def getrank(self):
         return self.rank
 
-    def setrank(self, rank):
-        self.rank = rank
+
 
