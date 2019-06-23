@@ -1,6 +1,6 @@
 import sys
 
-from challenge.utils import *
+from utils import *
 
 
 def run():
@@ -34,3 +34,6 @@ def run():
 
     print('\nThank you for using the Match Point Calculator !')
     sys.exit()
+
+
+run()
