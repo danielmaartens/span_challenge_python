@@ -4,7 +4,7 @@ from utils import *
 from team_value import TeamValue
 
 team_value = TeamValue('GoGetters', 10)
-test_file_path = os.path.abspath('./resources/input.csv')
+test_file_path = os.path.abspath('./challenge/resources/input.csv')
 
 
 class TestTeamValues(unittest.TestCase):
