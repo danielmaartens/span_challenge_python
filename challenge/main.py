@@ -28,9 +28,17 @@ def run():
             print(str(team.getrank()) + '. ' + team.getname() + ', ' + str(team.getvalue()) + (
                 ' pt' if team.getvalue() == 1 else ' pts'))
 
-        user_carry_on = input('\nWould you like to check match point results of another league ? [Y/N]: ')
+        user_carry_on = input('\nWould you like to check match point results of another league ? [y/n]: ')
 
-        running = boolean_from_string(user_carry_on)
+        user_answer = boolean_from_string(user_carry_on)
+
+        while user_answer is None:
+            print('\nI do not understand your command, please try again... ')
+            user_carry_on = input('\nWould you like to check match point results of another league ? [y/n]: ')
+
+            user_answer = boolean_from_string(user_carry_on)
+
+        running = user_answer
 
     print('\nThank you for using the Match Point Calculator !')
     sys.exit()
