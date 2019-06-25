@@ -34,11 +34,12 @@ def list_to_dictionary(team_value_list):
 
 
 def boolean_from_string(s):
-    lower_case = s.lower()
+    lower_case = s.split('\n')[0].lower()
 
     switcher = {
         'y': True,
         'yes': True,
+        'c': True,
         'n': False,
         'no': False
     }
@@ -56,7 +57,7 @@ def get_team_result_from_string(result, regex_pattern):
 
     r = re.search(regex_pattern, result)
     if r:
-        # remove space from name
+        # remove space from end of name
         name = r.group(1)[:-1]
         result = int(r.group(2))
         team_value = TeamValue(name, result)
