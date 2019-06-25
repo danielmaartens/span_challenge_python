@@ -22,14 +22,29 @@ Lions 4, Grouches 0
 
 - You need to know the absolute file path to copy and paste it into the terminal
 
+### Test and run the program
+
+``` 
+sh test_and_run
+```
+
 ### Running the program
 
+``` 
+sh run
+```
+###### OR
 ```
 cd path/to/span_challenge_python
 python3 challenge/main.py
 ```
 
 ### Running the tests
+
+``` 
+sh test
+```
+###### OR
 
 ```
 cd path/to/span_challenge_python
