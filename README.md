@@ -1,6 +1,8 @@
-# span_challenge_python
+# span_challenge_python #
 
-This is a command-line application that will calculate the ranking table for a
+### League Rank Calculator
+
+This is a command-line application written in `python` that will calculate the ranking table for a
 soccer league.
 
 ### Requirements
@@ -31,5 +33,5 @@ python3 challenge/main.py
 
 ```
 cd path/to/span_challenge_python
-python3 challenge/tests.py
+python3 challenge/tests.py -v
 ```
