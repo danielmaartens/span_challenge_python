@@ -47,6 +47,7 @@ def run():
 
             user_answer = input('\nSorry, your file does not exist ! Please double-check your file path and try again... Press [c] to continue, or any other key (besides ENTER) to exit...\n')
             running = boolean_from_string(user_answer)
+            delay = 0
 
     print('\nThank you for using the League Rank Calculator !')
     sys.exit()
