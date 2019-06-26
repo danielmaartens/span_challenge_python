@@ -19,12 +19,12 @@ class TestTeamValues(unittest.TestCase):
 
     def test_team_result_from_string_regex_name(self):
         print('\nRegex should take into account spaces within a team name')
-        team_result = get_team_result_from_string('FC Awesome 1', team_result_grouping_pattern)
+        team_result = get_team_result_from_string('FC Awesome 1', TEAM_RESULT_GROUPING_PATTERN)
         self.assertEqual(team_result.getname(), 'FC Awesome')
 
     def test_team_result_from_string_regex_value(self):
         print('\nThis function should extract the team\'s score and convert it into a number')
-        team_result = get_team_result_from_string('FC Awesome 1', team_result_grouping_pattern)
+        team_result = get_team_result_from_string('FC Awesome 1', TEAM_RESULT_GROUPING_PATTERN)
         self.assertEqual(team_result.getvalue(), 1)
 
 

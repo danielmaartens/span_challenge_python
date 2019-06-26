@@ -3,7 +3,7 @@ import operator
 from time import sleep
 from team_value import TeamValue
 
-team_result_grouping_pattern = '^([a-zA-Z\\s]+)([0-9]+$)'
+TEAM_RESULT_GROUPING_PATTERN = '^([a-zA-Z\\s]+)([0-9]+$)'
 
 
 def dictionary_to_team_value_list(team_value_dictionary):
@@ -151,7 +151,7 @@ def get_ordered_match_points_from_file(file_path):
         match_outcome = []
 
         for result in match_results:
-            team_value = get_team_result_from_string(result, team_result_grouping_pattern)
+            team_value = get_team_result_from_string(result, TEAM_RESULT_GROUPING_PATTERN)
 
             if team_value is not None:
                 match_outcome.append(team_value)
