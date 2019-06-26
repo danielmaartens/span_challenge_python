@@ -9,8 +9,9 @@ soccer league.
 
 - Python 3
 
-### Note 
+### NOTE:
 - Results of your soccer league must be in a file with the following structure
+- Please make sure the file ends with the last line of match outcomes, i.e. do not leave any empty lines in the file.
 
 ```
 Lions 3, Snakes 3
@@ -22,31 +23,47 @@ Lions 4, Grouches 0
 
 - You need to know the absolute file path to copy and paste it into the terminal
 
-### Test and run the program
+#### NB:
+- This program CANNOT handle tildes (`~`) at the start of the file path. 
 
+### Test and Run 
+Before completing the following steps, please make sure you are in the root directory.
+``` 
+cd path/to/span_challenge_python
+```
+
+### Programmatic Execution
+
+Scripts have been provided so that you do not have to focus on any initial setup, besides making sure you have `node 8`.
+
+All you to do is run the following from the project `root`:
+
+##### Options
+
+1 - test and run
 ``` 
 sh test_and_run
 ```
-
-### Running the program
-
-``` 
-sh run
-```
-###### OR
-```
-cd path/to/span_challenge_python
-python3 challenge/main.py
-```
-
-### Running the tests
-
+2 - test
 ``` 
 sh test
 ```
-###### OR
-
+3 - run
+``` 
+sh run
 ```
-cd path/to/span_challenge_python
+
+### Manual Execution
+If you rather manually execute in the command line, then run the following commands:
+
+
+#### run tests
+``` 
 python3 challenge/tests.py -v
 ```
+
+#### run program
+```
+python3 challenge/main.py
+```
+
