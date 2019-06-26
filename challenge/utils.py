@@ -23,7 +23,7 @@ def dictionary_to_list(team_value_dictionary):
 
 def list_to_dictionary(team_value_list):
     """
-    converts a map object to a list for easier processing of data later.
+    converts a list to a dictionary for use in tests for easier access of team names we know.
 
     :param team_value_list:
     :return:
