@@ -8,7 +8,7 @@ TEAM_RESULT_GROUPING_PATTERN = '^([a-zA-Z\\s]+)([0-9]+$)'
 
 def dictionary_to_list(team_value_dictionary):
     """
-    converts a map object to a list for easier processing of data later.
+    converts a dictionary to a list for easier processing of data later.
 
     :param team_value_dictionary:
     :return:
