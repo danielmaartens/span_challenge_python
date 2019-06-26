@@ -66,7 +66,7 @@ class TestDraw(unittest.TestCase):
 class TestFinalResult(unittest.TestCase):
 
     def setUp(self):
-        self.final_results = get_ordered_match_points_from_file(test_file_path)
+        self.final_results = get_league_results(test_file_path)
 
     def test_first_team_rank(self):
         print('\nThis team should have a rank of 1')
