@@ -23,7 +23,7 @@ def run():
 
         if os.path.exists(file_path):
 
-            ranked_teams = get_ordered_match_points_from_file(file_path)
+            ranked_teams = get_league_results(file_path)
 
             print('\nRESULTS\n')
 
