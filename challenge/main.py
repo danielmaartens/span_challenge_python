@@ -19,14 +19,19 @@ def run():
 
         delayed_print('\nPlease provide the full path of the file where your results are stored:\n', delay)
 
+        # read in user input and store it in the file_path variable
         file_path = input('Full File Path: ')
 
+        # does file exist ?
         if os.path.exists(file_path):
 
+            # it does so let's start processing
+            # process the file contents and get the league results
             ranked_teams = get_league_results(file_path)
 
             print('\nRESULTS\n')
 
+            # print out the ranks in a format specified in the challenge.
             for team in ranked_teams:
                 print(str(team.getrank()) + '. ' + team.getname() + ', ' + str(team.getvalue()) + (
                     ' pt' if team.getvalue() == 1 else ' pts'))
