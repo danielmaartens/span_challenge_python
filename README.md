@@ -36,7 +36,7 @@ cd path/to/span_challenge_python
 
 Scripts have been provided so that you do not have to focus on any initial setup, besides making sure you have `python 3` installed.
 
-All you have to do is run the following from the project `root`:
+All you have to do is run any one of the following from the project `root`:
 
 ##### Options
 
