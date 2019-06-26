@@ -137,7 +137,7 @@ def set_team_ranks(sorted_team_match_points):
 
 def calculate_match_points(match_results):
     """
-    processes a vector of the two team scores in a single match
+    processes a list of the two team scores in a single match
     and returns a new TeamValue object for each team where the value parameter
     represents the points the team received from either Losing/Winning/Drawing the match.
 
