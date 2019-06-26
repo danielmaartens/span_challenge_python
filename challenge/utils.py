@@ -168,7 +168,7 @@ def calculate_match_points(match_results):
     elif team_a_goals > team_b_goals:
         team_a_points.setvalue(3)
 
-    # team B LOST
+    # team B WON
     else:
         team_b_points.setvalue(3)
 
